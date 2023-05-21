@@ -1,0 +1,28 @@
+1. pbinom(k,n,p)
+
+2. qnorm(k,np,sqrt(npq))
+
+3. formula IC(pi)
+	p = k/n
+	alfa = 1-conf
+	z = qnorm(1-alfa/2)
+	[p - z*sqrt(p*(1-p)/n) , p + z*sqrt(p*(1-p)/n)]
+
+4. aillar n de la formula de pi
+	amplada total = p - pi
+	ampl2 = amplada total / 2
+	alfa = 1-conf
+	z = qnorm(1-alfa/2)
+	p = proporcio
+	n = ceiling(p*(1-p))/(ampl2/z)^2
+
+5. ceiling((0.5*(1-0.5))/(ampl2/z)^2)
+
+6. 
+	amplitud = 0.2539-0.176
+	conf = 0.95
+	alfa = 1-conf
+	z = qnorm(1-alfa/2)
+	ampl2 = amplitud/2
+	p = 0.176+ampl2	
+	n3 = ceiling(p*(1-p)/((ampl2/z)^2))

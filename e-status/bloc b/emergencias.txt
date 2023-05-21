@@ -1,0 +1,11 @@
+1. pnorm(k,E,Desv)
+
+2. qnorm(p,E,Desv)
+
+3.  pnorm(k+x,90,22) - pnorm(k-x,90,22)
+
+4. Es = (E*n) / 60 , Desvs = (Desv * Vn) / 60 -> TCL suma
+
+5.  1-pnorm(k,E,Desv/sqrt(n)) -> TCL media
+
+6. nose

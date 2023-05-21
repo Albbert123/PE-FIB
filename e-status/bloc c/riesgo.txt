@@ -1,0 +1,29 @@
+1. k · frec (dels dos)
+
+2. Excel -> desglossar la taula -> posar k, "frec" vegades
+i dividir-ho entre n
+
+si k=2 i frec = 3 i n = 45 casos
+	2 -> 2/45
+	2 -> 2/45
+	2 -> 2/45
+....
+
+copiar los datos a R;
+
+x = c(.....) //guillermo
+mean(x)
+
+3. sd(x)
+
+y = c(......) //enrique
+
+4.mean(y) , sd(y)
+
+5. IC mu's independent -> t.test(x,y,var.equal=T)
+
+6. npi
+
+7. npi
+
+8. mirar solucio del 7 i interpretar

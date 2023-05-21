@@ -1,0 +1,35 @@
+dades = read.table("clipboard",header=TRUE) 
+model = summary(lm(dades$score~dades$seg))
+
+1. pendiente -> b1
+
+2. SE de pendiente -> sb1
+
+3. Desv tipicia de la respuesta de los anuncions:
+residual std. error
+
+4. 
+prob = 0.9
+alfa = 1-prob
+t = qt(1-alfa/2,DF)
+x = 10 seg
+
+b1*10-t*sb1*10 , b1*10+t*sb1*10
+
+5. b0+b1*xseg
+
+6. IC de prediccion
+seg = dades$seg
+score = dades$score
+lm = lm(score~seg)
+x = xseg
+dataframe = data.frame(seg=x)
+predict(lm,dataframe,interval="predict")
+
+7. Ic de punt. esperada
+predict(lm,dataframe,interval="confidence")
+
+8. R squared
+
+9. plot(lm(dades$score~dades$seg))
+

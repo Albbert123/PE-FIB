@@ -1,0 +1,53 @@
+dades = read.table("clipboard",header=TRUE) 
+models = lm(dades$Preu~dades$Capacitat)
+summary(models)
+
+1. independent -> b0
+
+2. Desviacio residual:
+Residual standard error -> summary(models)$sigma
+Variança residual -> round((summary(models)$sigma)^2)
+
+3. El preu de l'ordinador s'incrmenta 1.3€ per cada GB,
+estadidtic t?
+(b1-1.3) / sb1
+
+4. R squared
+
+5. Residu
+y = 825€
+x = 500GB
+Residuo = y - x*b1 - b0
+
+6. IC del preu d'un ordinador de 500GB
+preu = dades$Preu
+capacitat = dades$Capacitat
+lm = lm(preu~capacitat)
+dataframe = data.frame(capacitat = 500)
+
+"Trobeu un interval de confiança al 95% per al preu mitjà 
+d'un ordinador de 550 GB de capacitat al disc dur":
+	p = predict(lm,dataframe,interval="confidence")
+
+
+7. 
+splitp = split(dades,dades$Proveïdor)
+dades1 = splitp$'1'
+dades2 = splitp$'2'
+dades3 = splitp$'3'
+mean(dades1$Capacitat)
+mean(dades2$Capacitat)
+mean(dades3$Capacitat)
+
+8. 
+
+	- Tenint en compte la capacitat:
+summary(lm(Preu~Capacitat+as.factor(Proveïdor)))
+
+	- Sense tenir en compte la capacitat
+summary(lm(Preu~as.factor(Proveïdor)))
+
+Fer IC del proveïdor que diguin
+
+
+

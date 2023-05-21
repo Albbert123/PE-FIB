@@ -1,0 +1,7 @@
+1 lamda nueva (lamda principal·nº d pag), ppois(k,lamda)
+2 lamda nueva (lamda principal·nº d pag), dpois(k,lamda)
+3 lamda principal / 100 ->VAC
+4 lamda principal / 100, pexp(k,lamda)
+5 anar provan
+6 1-pbinom()
+7 

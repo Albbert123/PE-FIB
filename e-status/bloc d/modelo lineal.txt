@@ -1,0 +1,34 @@
+(intercept) b0,sb0,tb0,pb0
+(    x    ) b1,sb1,tb1,pb1
+
+df
+
+1. t = b / s
+ (t-value = Estimate / SE)
+
+2. p-value de b1
+   pb1
+
+3. term. lineal -> b1
+
+4. fraccion de variablidad entre X i Y -> R squared*100
+
+5. SE lineal -> sb1
+
+6. coef. de determinacion -> R squared
+
+7. SE independiente -> sb0
+
+8. term. independiente -> b0
+
+9. grados de libertad -> DF
+
+10. 
+prob = 0.95
+alfa = 1-prob
+t = qt(1-alfa/2,df)
+	- extremo superior:
+	b0 + t*sb0
+	- extremo inferior:
+	b0 - t*sb0
+

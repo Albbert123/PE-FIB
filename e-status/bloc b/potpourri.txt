@@ -1,0 +1,17 @@
+1. >40 anys -> pmasc*p>40 + pfem*p>40
+
+2. P(h i < 40)*pnorm(k,E1,Desv1) + P(h i > 40)*pnorm(k,E1,Desv2) + P(d i < 40)*pnorm(k,E2,Desv3) + P(d i > 40)*pnorm(k,E2,Desv4)
+
+3. P(h / x > 63) = P(h ^ x>63) / P(x>63) = (P(h i < 40)*(1-pnorm(k,E1,Desv1)) + P(h i > 40)*(1-pnorm(k,E1,Desv2))) / 
+   1 - P(h i < 40)*pnorm(k,E1,Desv1) + P(h i > 40)*pnorm(k,E1,Desv2) + P(d i < 40)*pnorm(k,E2,Desv3) + P(d i > 40)*pnorm(k,E2,Desv4)
+
+4. qnorm(error/100,E1,Desv1)
+
+5. P(<40 / x>65 ^ h) = P(<40 ^ x>65 ^ h) / P(x>65 ^ h) = 
+ = P(h ^ <40)*1-pnorm(k,E1,Desv1) / P(h ^ <40)*1-pnorm(k,E1,Desv1) + P(h ^ >40)*1-pnorm(k,E1,Desv2)
+
+6. lamda = interval/min_enunciat, ppois(k2,l) - ppois(k1-1,l)
+
+7. Binomial negativa, E = r/p i V = r·(1-p) / p^2
+
+8. R = dolços per omplir bossa, D = dolços enunciat, pbinom(R-1,D,prob)

@@ -1,0 +1,17 @@
+https://mega.nz/folder/Xc91xQZQ#i1q9UTvYXr_NbCchhAs1zw
+
+lamda = 1 / E(xmin)
+
+1. mirar formula varianza (si es uniforme aillar b de formula Esperanza, si es Exponencial usar lamda)
+
+2. (U) 1-punif(k,a,b) , (E) 1 - pexp(k,lamda)
+
+3. (U) 1-punif(k,a,b) , (E) 1-pexp(k,lamda)
+
+4. capacitat(en min) = (4.3*1024) / xMB , TCL -> suma: E(s) = n*E i Desv(s) = sqrt(n*V)
+   1-pnorm(capacitat,E(s),Desv(s))
+
+5. capacitatMAx(en min) = round( (qnorm(prob,E(s),Desv(s)))*xMB )
+
+6. Comences desde els n videos que et donen, i vas pujant els videos o baixant fins que (qnorm(prob_security, n*E, sqrt(n*V))*xMB) > (o <) 4.3*1024 
+    xMB = MB per 1 min de grabacio

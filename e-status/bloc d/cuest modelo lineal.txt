@@ -1,0 +1,36 @@
+dades = read.table("clipboard",header=TRUE) 
+dadesx = dades$'x'
+dadesy = dades$'y'
+
+models = lm(dadesy~dadesx)
+summary(models)
+
+1. prob=0.9
+alfa = 1-prob
+t = qt(a-alfa/2,DF)
+limite inferior -> b0 - t*s0
+
+2. parte variabilidad de X -> R squared en %
+   parte variabilidad difernte de X -> 1-Rsquared
+
+3. Est. independiente -> b0
+
+4. B0 = -17, t?
+b0-B0 / s0 = t0
+
+5. pendiente -> b1
+
+6. lineal; t1 = algo
+	b1 - x / s1 = t1 -> aillar x
+
+7. grados libertad -> DF
+
+8. Desviacion tipica termino aleatorio -> Y
+	SE = sd/arrel n
+
+9. coef. de determinacion -> R squared
+
+10. grafica -> plot(dadesx,dadesy)
+
+
+

@@ -1,0 +1,52 @@
+dades = read.table("clipboard",header=TRUE) 
+Y = dades$'perc'
+X = dades$'vol'
+
+model = lm(Y~X)
+summary(model)
+
+1. Variación en Y que se estima a partir de un incremento
+en volumen -> pendiente b1 
+
+2. pendiente -> X
+S1
+
+3. aumenta en promedio -> x = 2.5
+
+aumenta en promedio cada 1 unidad -> b1 (pendiente)
+aumenta en promedio cada x unidades -> b1*x
+
+4. Z = dades$temp
+model2 = lm(Y~Z) 
+summary(model2)
+pendent -> b1
+
+5. estadistico t de tiempo(Z)
+mirar t-value
+
+6. IC de tiempo
+prob = 0.95
+alfa = 1-prob
+t = qt(1-alfa/2,DF)
+b1 - t*s1 , b1 + t*s1
+
+7. coef. correlacion lineal
+sqrt(R squared)
+
+8. Perc de absorcion amb x mins
+p = b0 + b1*xmin
+
+9. IC de perc amb x mins
+perc = dades$perc
+temp = dades$temp
+lm = lm(perc~temp)
+dataframe = data.frame(temp=16)
+predict(lm,dataframe,interval="confidence",level=0.98)
+
+
+10. Desviacion residual
+Residual SE de temp i de Vol
+Si no dona més de 2 xifres:
+	summary(model)$sigma
+	summary(model2)$sigma
+

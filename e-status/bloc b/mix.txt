@@ -1,0 +1,11 @@
+1. lamda = 1/E/7, 1-pexp(t2-t1,lamda)
+2. lamda = 1/E, pexp(k2,lamda) - pexp(k1,lamda)
+3. lamda = 1/E, qexp(p,lamda)
+4. qexp(1-p,setmanas) -> 1/resultat
+5. pnorm
+6. pnorm
+7. qnorm
+8. E(D) = E(x) - E(y) = 0
+   V(D) = V(x) + V(y) = desviacio(x)^2 + desvacio(y)^2 -> desviacio(D) = arrel
+si es superior a k:
+   P(x>k) + p(x<-k) -> 1-pnorm(k,0,desv(D)) + pnorm(-k,0,desviacio(D))pexpp1

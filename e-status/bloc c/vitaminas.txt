@@ -1,0 +1,50 @@
+dadesA = read.table("clipboard",header=TRUE) 
+dadesB = read.table("clipboard",header=TRUE) 
+
+1. dadesA (independents)
+split1 = split(dadesA,dadesA$Sent)
+dades1 = split1$'1' //un sentido
+dades2 = split1$'2' //amnbos sentidos
+n1 = length(dades1)
+n2 = length(dades2)
+s2 = ((n1-1)*var(dades1$Zumo)+(n2-1)*var(dades2$Zumo))/(n1+n2-2)
+s = sqrt(s2)
+
+2. mu = mean(dades2$Zumo)
+
+3.
+prob = 0.95
+alfa = 1-prob
+var1 = var(dades1$Zumo)
+var2 = var(dades2$Zumo)
+n1 = length(dades1$Zumo)
+n2 = length(dades2$Zumo)
+f1 = qf(1-alfa/2,n1-1,n2-1)
+q = var1/var2
+k1 = q/f1
+f2 = qf(alfa/2,n1-1,n2-1)
+k2 = q/f2
+
+4. dadesB
+anar restan -> dif = c(....)
+n = length(dif) / 2 (una naranja entera)
+mud = sum(dif) / n
+
+5. seA = s*sqrt(1/n1+1/n2)
+seB =  sd(dif)/sqrt(n/2)
+
+6.
+prob = 0.95
+alfa = 1-prob
+	-aparallades:
+t = qt(1-alfa/2,ntotal-1)
+mud - t*se , mud + t*se
+	-ind:
+mu1 = mean(dades1$Zumo)
+mu2 = mean(dades2$Zumo)
+t = qt(1-alfa/2,(n1+n2-2))
+(mu1-mu2)-t*seA , (mu1-mu2)+t*seA
+
+7.
+deduir
+

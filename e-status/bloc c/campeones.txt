@@ -1,0 +1,14 @@
+1. muA = mean(dataA)
+   muB = mean(dataB)
+   muA - muB
+
+2. sd(dataA)
+
+3. Variança de la dif. de mu de mostres independents
+	Fer-ho pas a pas per separat
+
+4. Calcular SE de mostres independents
+
+5. t.test(dataA, dataB, var.equal=T)
+
+6. Interpretar

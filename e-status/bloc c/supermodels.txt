@@ -1,0 +1,29 @@
+1. 
+<k
+abs(qnorm((1-prob)/2))
+
+>k
+abs(qnorm(prob/2))
+
+2. abs(qt(prob/2, n))
+
+3. qt(prob/2, n) = k (anar provan)
+
+4. 
+k1 = qf((1-0.57)/2,grau1,grau2)
+k2 = qf(1-((1-0.57)/2),grau1,grau2)
+	
+P(R < k1 ∪ R > k2) = 0.05:
+	k1 = qf(prob/2,g1,g2)
+	k2 = qf(1-(prob/2),g1,g2)
+
+5. El mateix que 4 pero kchis quadrat
+
+P(G < k1 ∪ G > k2) = 0.15:
+	k1 = qchisq(prob/2,g1)
+	k2 = qchisq(1-(prob/2),g1)
+
+6. conf=0.95, discr = 1.54
+ k1 = qf((1-conf) / 2,x,x) = 1/discr
+ anar provan x
+

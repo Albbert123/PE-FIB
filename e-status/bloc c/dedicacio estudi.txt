@@ -1,0 +1,16 @@
+1. Diferencia entre Q3 - Q1
+
+2. sum(data) / n
+
+3. sd(data)/sqrt(n); (se)
+
+4. calcular IC(mu) desv coneguda
+
+5. calcular IC(mu) desv desconeguda
+	calcular mateixa prob que abans, amb se = sd/arrel n
+	x = confiança
+	t.test(data,conf.level=x)
+
+6. aillar n de estadistic de mu amb desv coneguda
+	amplada/2 = z * sigma / arrel n
+	n = (z*sigma/(amplada/2))^2

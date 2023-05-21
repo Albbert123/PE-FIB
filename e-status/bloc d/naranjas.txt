@@ -1,0 +1,50 @@
+dades = read.table("clipboard",header=TRUE) 
+splitg = split(dades,dades$G)
+dades1 = splitg$'1'
+dades2 = splitg$'2'
+
+1. 
+dades1p = dades1$Peso
+dades2p = dades2$Peso
+boxplot(dades1p,dades2p)
+
+//mostres independents
+Zumo: dadest = c(45,68,65,59,70,65,95,83,80,73,105,76,77,62)
+Expr: G = c(1,1,1,1,1,1,1,2,2,2,2,2,2,2)
+summary(lm(dadest~as.factor(G))) -> primer lm
+
+2. Mirar el primer lm()
+El Estiamte de Expr2 es la quantitat extra en mitjana que 
+hi ha respecte Expr1(intercept).
+DF = numero total de naranjas - 2
+t = qt(1-alfa/2,DF)
+b1-t*sb1 , b1+t*sb1
+//si es 1 sentido sobre 2, cambiar signe
+//si expr es negativo cambiar ordre de interval
+
+
+Peso: P = c(201,218,224,188,214,250,283,223,210,206,237,217,193,175)
+summary(lm(dadest~P+as.factor(G))) -> segon lm
+
+3. Mirar el segon lm()
+El Estiamte de Expr2 es la quantitat extra en mitjana que 
+hi ha respecte Expr1(intercept). En aquest cas tenim en
+compte el pes.
+b2 
+
+4. Mirar el segon lm()
+Com hem afegit el pes, tenim un grau menys de llibertat
+DF = num total de naranajs - 3
+t = qt(1-alfa/2,DF) 
+b2-t*sb2 , b2+t*sb2
+
+5. IC prediccion
+zumo = dades$Z
+peso = dades$Peso
+lm = lm(zumo~as.factor(G)+peso)
+dataframe = data.frame(peso=x,G=[1\2])
+predict(lm,dataframe,interval="predict")
+
+6. Desviacio de errores -> residual STd. error
+del primer lm() i del segon lm()
+summary(..)$sigma

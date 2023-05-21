@@ -1,0 +1,13 @@
+1. p1 = nc1/sum(data) ... p5 = nc5/sum(data)
+   Avg = 1*p1 + 2*p2 ... +5*p5
+
+2. Calcular var = (1-E)^2 · p1 + .....
+   Desv = sqrt(var)
+   se = desv / sqrt(sum)
+
+3. n = ceiling ((1.96·desv)/interval)^2	
+
+4. IC(mu,conf) = avg -+ tn-1, 1-alfa/2 · se
+
+5. >=3 occ -> p = (35 + 17 + 4)/sum
+   IC(pi, conf) = p -+ Z1-alfa/2 · se

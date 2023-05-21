@@ -1,0 +1,31 @@
+x<-read.table("clipboard",header=T)
+
+1. sumar las Hume de Nvo o Ref i entre n
+idsplit = split(x,x$Id)
+Nvosplit = split(x,x$Nvo)
+ref = Nvosplit$'0' (si et demanan noves)
+o nvo = Nvosplit$'1' (si et demanan ref)
+
+2. Restar diferencies entre mateix pacient(id)
+idsplit e ir restando.
+Les diferencies les poses en un vector dif = c(....) 
+mu = mean(dif)
+
+3. s = sd(dif)
+
+4. se = s / sqrt(n)
+
+5. mu/se
+
+6. 
+Hacer Humedad ojo derecho - ojo izquierdo (por id) y lo
+mismo que el 5
+
+7. ?
+
+8. 
+prob = 0.95
+alfa = 1-alfa
+t = qt(1-alfa/2,n-1)
+mu - t * s/sqrt(n) , mu + t * s/sqrt(n)
+

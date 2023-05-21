@@ -1,0 +1,11 @@
+N -> peso(gramos)
+
+1. 1-pbinom(x-1,n,pnorm(k,E,Desv))
+
+2. pnorm(x2,E,Desv) - pnorm(x1,E,Desv) -> x2 aprop de E+Desv i x1 aprop de E-Desv i anar provan
+
+3. pnorm(x2,61.6,3.5/Vn) - pnorm(x1,61.6,3.5/Vn) -> TCL de la media
+
+4. pnorm(x2,61.6,3.5/Vn) - pnorm(x1,61.6,3.5/Vn) -> TCL de la media
+
+5. pnorm(x2,61.6,3.5/Vn) - pnorm(x1,61.6,3.5/Vn) -> ara buscas la n

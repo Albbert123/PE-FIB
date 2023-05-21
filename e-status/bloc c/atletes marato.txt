@@ -1,0 +1,12 @@
+1. mu = mean(data) = sum(data)/n
+
+2. var = sd(data)*sd(data)
+
+3 i 4. t.test(data,conf.level=0.8)
+   // IC(mu,0.8) = mu +- tn-1,1-alfa · sd(data)/arrel n
+
+5. aplicar formula IC(var,conf) i fer arrel per obtenir 
+   desviació.
+
+6. A major confiança, menor risc -> menor precicio
+   interval mes gran
